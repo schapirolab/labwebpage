@@ -106,14 +106,14 @@ main p {
 }
 
 .circle-link {
-  width: 130px;
-  height: 130px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 0.68rem;
+  font-size: 0.63rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-decoration: none;
@@ -127,15 +127,20 @@ main p {
   color: white;
 }
 
+.circle-link.circle-tan:hover {
+  color: #333;
+}
+
 .circle-connector {
   height: 2px;
   width: 55px;
   background: #bbb;
 }
 
-.circle-navy   { background-color: #1d3464; }
-.circle-purple { background-color: #7b6b9e; }
-.circle-red    { background-color: #a04444; }
+.circle-navy   { background-color: #384880; }
+.circle-purple { background-color: #9870b0; }
+.circle-red    { background-color: #c05850; }
+.circle-tan    { background-color: #f8e0a0; color: #333; }
 
 /* ─── Footer ─── */
 
@@ -326,10 +331,10 @@ footer a {
   margin-top: 0.5rem;
 }
 
-.badge-pi       { background: #8978b5; color: white; }
-.badge-grad     { background: #c8a850; color: #444; }
-.badge-research { background: #be7272; color: white; }
-.badge-alumni   { background: #9080b5; color: white; }
+.badge-pi       { background: #384880; color: white; }
+.badge-grad     { background: #f8e0a0; color: #333; }
+.badge-research { background: #c05850; color: white; }
+.badge-alumni   { background: #9870b0; color: white; }
 
 /* PI layout: photo left, info right */
 .pi-layout {
@@ -388,7 +393,7 @@ footer a {
 
 .people-photo {
   width: 192px;
-  height: 238px;
+  height: 206px;
   object-fit: cover;
   object-position: top;
   display: block;
@@ -398,7 +403,7 @@ footer a {
 /* Silhouette placeholder for no-photo */
 .no-photo {
   width: 192px;
-  height: 238px;
+  height: 206px;
   background: #c8c8c8;
   display: flex;
   flex-direction: column;
