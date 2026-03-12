@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #7a6ba0;
+}
+
+/* ─── Site Header ─── */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.5rem 3rem 0;
+}
+
+.site-title {
+  font-family: 'Noticia Text', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.brain-logo {
+  width: 185px;
+  height: auto;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+/* ─── Navigation ─── */
+
+.site-nav {
+  padding: 1.8rem 3rem 0;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  padding-bottom: 0;
+}
+
+.site-nav ul li a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aaa;
+}
+
+.site-nav ul li a.active {
+  color: #7a6ba0;
+}
+
+.site-nav ul li a:hover {
+  color: #7a6ba0;
+  text-decoration: none;
+}
+
+/* ─── Main Content ─── */
+
+main {
+  padding: 2.5rem 3rem 3rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ─── Home: Three Circles ─── */
+
+.circles-row {
+  display: flex;
+  align-items: center;
+  margin: 3.5rem 0 3rem;
+}
+
+.circle-link {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  flex-shrink: 0;
+  border: 3px solid rgba(140, 140, 140, 0.35);
+}
+
+.circle-link:hover {
+  opacity: 0.88;
+  text-decoration: none;
+  color: white;
+}
+
+.circle-connector {
+  height: 2px;
+  width: 55px;
+  background: #bbb;
+}
+
+.circle-navy   { background-color: #1d3464; }
+.circle-purple { background-color: #7b6b9e; }
+.circle-red    { background-color: #a04444; }
+
+/* ─── Footer ─── */
+
+footer {
+  text-align: center;
+  padding: 0 3rem 3rem;
+}
+
+.footer-rule {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.penn-shield {
+  width: 78px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.9rem;
+}
+
+footer a {
+  display: block;
+  color: #333;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ─── Publications ─── */
+
+.pub-section-title {
+  font-family: 'Noticia Text', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #333;
+  margin: 2rem 0 0.8rem;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list li {
+  margin-bottom: 0.9rem;
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+.pub-note {
+  display: block;
+  margin-left: 1.5rem;
+  font-size: 0.93rem;
+  color: #444;
+  margin-top: 0.1rem;
+}
+
+/* ─── Content headings (Join Us / Resources) ─── */
+
+.content-h2 {
+  font-family: 'Noticia Text', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.6rem 0 0.5rem;
+}
+
+.content-h3 {
+  font-family: 'Noticia Text', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.3rem;
+}
+
+/* ─── Resources ─── */
+
+.stimulus-images {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.stimulus-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ─── Contact Form ─── */
+
+.contact-form {
+  margin-top: 1.5rem;
+  max-width: 480px;
+}
+
+.form-row-two {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label,
+.form-group-full label {
+  display: block;
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input,
+.form-group-full input,
+.form-group-full textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  padding: 0.2rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  outline: none;
+}
+
+.form-group-full {
+  margin-bottom: 1.2rem;
+}
+
+.form-group-full textarea {
+  height: 80px;
+  resize: none;
+  display: block;
+}
+
+.form-send-row {
+  border-top: 1px solid #999;
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  text-align: center;
+}
+
+.btn-send {
+  background: transparent;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+}
+
+.btn-send:hover {
+  color: #7a6ba0;
+}
+
+/* ─── People page ─── */
+
+.people-section {
+  padding: 2.5rem 0 2rem;
+}
+
+.people-section + .people-section {
+  border-top: 1px solid #ccc;
+}
+
+.section-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+/* Circle badge labels */
+.section-badge {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.badge-pi       { background: #8978b5; color: white; }
+.badge-grad     { background: #c8a850; color: #444; }
+.badge-research { background: #be7272; color: white; }
+.badge-alumni   { background: #9080b5; color: white; }
+
+/* PI layout: photo left, info right */
+.pi-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.people-photo-lg {
+  width: 248px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.pi-info {
+  padding-top: 0.3rem;
+}
+
+.pi-name {
+  font-family: 'Noticia Text', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pi-info a {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  text-decoration: underline;
+}
+
+.pi-links-inline {
+  display: inline;
+  font-size: 0.95rem;
+}
+
+.pi-links-inline a {
+  display: inline;
+  margin-bottom: 0;
+}
+
+/* People grid (grad students, alumni) */
+.people-grid {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.person-item {
+  display: flex;
+  flex-direction: column;
+  width: 192px;
+}
+
+.people-photo {
+  width: 192px;
+  height: 238px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin-bottom: 0.45rem;
+}
+
+/* Silhouette placeholder for no-photo */
+.no-photo {
+  width: 192px;
+  height: 238px;
+  background: #c8c8c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.45rem;
+  overflow: hidden;
+}
+
+.silhouette-head {
+  width: 72px;
+  height: 72px;
+  background: #aaa;
+  border-radius: 50%;
+}
+
+.silhouette-body {
+  width: 130px;
+  height: 95px;
+  background: #aaa;
+  border-radius: 65px 65px 0 0;
+  margin-top: 6px;
+}
+
+/* Name row (name + social icons inline) */
+.person-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.person-name {
+  font-family: 'Noticia Text', serif;
+  font-weight: 700;
+  font-size: 0.97rem;
+}
+
+.person-email {
+  font-size: 0.8rem;
+  word-break: break-all;
+  text-decoration: underline;
+  color: #333;
+}
+
+.person-role {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.35;
+}
+
+/* Social icons */
+.sicon {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  line-height: 1;
+}
+
+.sicon:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.sicon.bluesky  { color: #0085ff; }
+.sicon.mastodon { color: #563acc; }
