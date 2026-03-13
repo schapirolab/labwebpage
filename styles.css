@@ -306,8 +306,21 @@ footer a {
   padding: 2.5rem 0 2rem;
 }
 
-.people-section + .people-section {
-  border-top: 1px solid #ccc;
+.section-connector-v {
+  width: 130px;
+  height: 36px;
+  position: relative;
+}
+
+.section-connector-v::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #bbb;
+  transform: translateX(-50%);
 }
 
 .section-row {
@@ -523,6 +536,11 @@ footer a {
 
   .circle-connector {
     width: 14px;
+  }
+
+  /* Vertical connector between sections */
+  .section-connector-v {
+    width: 95px;
   }
 
   /* People: stack badge above grid */
