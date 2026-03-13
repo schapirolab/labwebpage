@@ -304,26 +304,23 @@ footer a {
 
 .people-section {
   padding: 2.5rem 0 2rem;
+  position: relative;
+}
+
+/* Line from badge bottom of each section down to badge top of next section */
+.people-section:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #bbb;
+  left: 65px;                              /* center of 130px badge */
+  transform: translateX(-50%);
+  top: calc(2.5rem + 0.5rem + 130px);     /* bottom edge of badge */
+  bottom: -3rem;                           /* = -(2.5rem + 0.5rem) into next section, landing at next badge top */
 }
 
 .section-connector-v {
-  width: 130px;
-  height: calc(2rem + 2.5rem + 36px);
-  margin-top: -2rem;
-  margin-bottom: -2.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.section-connector-v::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #bbb;
-  transform: translateX(-50%);
+  display: none;
 }
 
 .section-row {
@@ -541,9 +538,9 @@ footer a {
     width: 14px;
   }
 
-  /* Vertical connector between sections */
-  .section-connector-v {
-    width: 95px;
+  /* Hide vertical connectors on mobile */
+  .people-section:not(:last-child)::after {
+    display: none;
   }
 
   /* People: stack badge above grid */
