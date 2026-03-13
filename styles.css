@@ -308,8 +308,11 @@ footer a {
 
 .section-connector-v {
   width: 130px;
-  height: 36px;
+  height: calc(2rem + 2.5rem + 36px);
+  margin-top: -2rem;
+  margin-bottom: -2.5rem;
   position: relative;
+  z-index: 1;
 }
 
 .section-connector-v::after {
